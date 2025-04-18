@@ -88,7 +88,7 @@ df_DA_US = df[(df['job_title_short'] == 'Data Analyst') & (df['job_country'] == 
 
 To identify the top skills in demand, I analyzed job postings from a dataset focused on data-related roles in the U.S. I filtered the data by the top 3 most popular job titles and visualized the five most frequently mentioned skills for each using horizontal bar plots. The visualizations show the likelihood of each skill appearing in job postings, helping highlight which technical abilities are most valued across roles such as Data Analyst, Data Engineer, and Data Scientist.
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [2_Skills_Demand.ipynb](3_Project\2_Skills_Demand.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [2_Skills_Demand.ipynb](3_Project/2_Skills_Demand.ipynb)
 
 
 ### Code
@@ -124,7 +124,7 @@ plt.show()
 
 ### Visualization
 
-![Visualization of Top Skills for Top 3 Data Roles](3_Project\Images\skill_demand_for_data_jobs.png)
+![Visualization of Top Skills for Top 3 Data Roles](3_Project/Images/skill_demand_for_data_jobs.png)
 *These bar graphs shows probability the top 5 skills of each of the top 3 data roles appearing in a job post.*
 
 
