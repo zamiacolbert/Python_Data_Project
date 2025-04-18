@@ -5,7 +5,7 @@
 
 To identify the top skills in demand, I analyzed job postings from a dataset focused on data-related roles in the U.S. I filtered the data by the top 3 most popular job titles and visualized the five most frequently mentioned skills for each using horizontal bar plots. The visualizations show the likelihood of each skill appearing in job postings, helping highlight which technical abilities are most valued across roles such as Data Analyst, Data Engineer, and Data Scientist.
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [2_Skills_Demand](3_Project\2_Skills_Demand.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [2_Skills_Demand.ipynb](3_Project\2_Skills_Demand.ipynb)
 
 
 ### Code
@@ -254,4 +254,8 @@ plt.show()
 
 ### Insights
 
+* **High Value with Programming Skills:** The programming skills (colored blue) demonstrate significant potential. Python commands the highest salary, indicating its value in the market, while SQL has the highest demand, highlighting its fundamental importance across many Data Analyst roles. This implies that developing strong programming skills, particularly in Python and SQL, is highly beneficial for both earning potential and job opportunities in data analysis.
 
+* **Potential with Analytical Tools:** Analytical tools (colored orange) Tableau and Power BI occupy a middle ground in terms of both demand (percentage of job postings) and salary, suggesting they are frequently used and offer a competitive average compensation. In contrast, while Excel exhibits the second-highest demand, indicating its widespread use across Data Analyst roles, it also presents one of the lower median salaries on the chart. This might imply that Excel proficiency is often an expected baseline skill for many data-related positions, contributing to its high demand, but specialized analytical tools like Tableau and Power BI are associated with roles requiring more in-depth analysis and thus command a higher pay.
+
+* **Specialization with Databases and Cloud Technology:** Oracle and SQL Server offered some of the highest salaries but exhibit the lowest demand in Data Analyst job postings. This may indicate that these skills are highly valued for specific, more specialized roles or within particular types of organizations, but they are not broadly required across the majority of Data Analyst positions. In contrast, focusing on programming skills and analytical tools, which together constitute a larger proportion of the high-demand and reasonably well-compensated skills, might represent a more broadly applicable and potentially more accessible path for many aspiring and current Data Analysts.
