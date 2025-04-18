@@ -151,7 +151,7 @@ plt.show()
 
 To understand how demand for specific skills has evolved, I tracked the top 5 most requested skills for Data Analyst roles over time. Using a line plot, I visualized trends in the likelihood of each skill appearing in U.S. job postings throughout 2023. This analysis provides insight into which skills are gaining or losing popularity, helping job seekers align their learning with current industry needs.
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [3_Skills_Trend.ipynb](3_Project\3_Skills_Trend.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [3_Skills_Trend.ipynb](3_Project/3_Skills_Trend.ipynb)
 
 
 ### Code
@@ -181,7 +181,7 @@ plt.show()
 ```
 
 ### Visualization
-![Top Trending Skills for Data Analyst in the US](3_Project\Images\skills_trending_for_data_analyst.png)
+![Top Trending Skills for Data Analyst in the US](3_Project/Images/skills_trending_for_data_analyst.png)
 *This line graph shows the top 5 trending skills for data analysts in the U.S. for 2023.*
 
 ### Insights
@@ -201,7 +201,7 @@ plt.show()
 
 To evaluate salary trends for U.S-based Data Analysts, I created visualizations to compare compensation across job titles and skills. A box plot displays salary distributions for the top 6 data roles, offering a clear view of pay ranges in the U.S. I also identified the top 10 highest-paying and top 10 most in-demand skills for Data Analysts in the United States, using bar charts to show how each skill correlates with median salary. This dual analysis helps highlight both lucrative and widely requested skills in the current job market.
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [4_Salary_Analysis.ipynb](3_Project\4_Salary_Analysis.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [4_Salary_Analysis.ipynb](3_Project/4_Salary_Analysis.ipynb)
 
 ### Salary Analysis :
 
@@ -224,7 +224,7 @@ plt.show()
 ```
 
 ### Visualization
-![Salary Distributions of Data Jobs in the US](3_Project\Images\salary_analysis_for_data_roles.png)
+![Salary Distributions of Data Jobs in the US](3_Project/Images/salary_analysis_for_data_roles.png)
 *This box plot shoes the salary distributions for the top 6 data roles.*
 
 ### Insights
@@ -270,7 +270,7 @@ plt.show()
 ```
 
 ### Visualization
-![The Highest Paid & Most In-Demand Skills for Data Analyst in the United States](3_Project\Images\highest_paid_and_most_in_demand_skills_for_data_analyst_in_us.png)
+![The Highest Paid & Most In-Demand Skills for Data Analyst in the United States](3_Project/Images/highest_paid_and_most_in_demand_skills_for_data_analyst_in_us.png)
 *This bar chart shows the highest paid skills (top graph) and median salary for the most in-demand skills (bottom graph) for data analysts in the US.*
 
 ### Insights
@@ -289,7 +289,7 @@ plt.show()
 To determine the most optimal skill for Data Analysts, I created a scatter plot comparing the demand (measured by job posting frequency) and median salary of various skills. Each point represents a skill, with its position indicating both how common it is and how well it pays. Using label adjustments to reduce overlap, the visualization helps highlight high-demand, high-paying skills—making it easier to identify which skills offer the best balance of marketability and earning potential.
 
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [5_Optimal_Skills.ipynb](3_Project\5_Optimal_Skills.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [5_Optimal_Skills.ipynb](3_Project/5_Optimal_Skills.ipynb)
 
 
 ### Code
@@ -332,7 +332,7 @@ plt.show()
 ```
 
 ### Visualization
-![Most Optimial Skills For Data Analyst Based on Salary and Demamnd](3_Project\Images\most_optimal_skills_for_data_analyst.png)
+![Most Optimial Skills For Data Analyst Based on Salary and Demamnd](3_Project/Images/most_optimal_skills_for_data_analyst.png)
 *The scatter plot shows the most optimal skills (based on salary and demand) for data analysts in the US.*
 
 ### Insights
