@@ -5,7 +5,7 @@
 
 To identify the top skills in demand, I analyzed job postings from a dataset focused on data-related roles in the U.S. I filtered the data by the top 3 most popular job titles and visualized the five most frequently mentioned skills for each using horizontal bar plots. The visualizations show the likelihood of each skill appearing in job postings, helping highlight which technical abilities are most valued across roles such as Data Analyst, Data Engineer, and Data Scientist.
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [2_Skills_Demand.ipynb](3_Project\2_Skills_Demand.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [3_Project/2_Skills_Demand.ipynb](3_Project\2_Skills_Demand.ipynb)
 
 
 ### Code
@@ -206,7 +206,7 @@ plt.show()
 To determine the most optimal skill for Data Analysts, I created a scatter plot comparing the demand (measured by job posting frequency) and median salary of various skills. Each point represents a skill, with its position indicating both how common it is and how well it pays. Using label adjustments to reduce overlap, the visualization helps highlight high-demand, high-paying skills—making it easier to identify which skills offer the best balance of marketability and earning potential.
 
 
-Here is the link to my notebook to see a detailed breakdown of the steps taken: [.ipynb](3_Project/5_Optimal_Skills.ipynb)
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [5-Optimal_Skills.ipynb](3_Project\5_Optimal_Skills.ipynb)
 
 
 ### Code
