@@ -1,3 +1,86 @@
+# Overview
+
+Welcome to my analysis of the data job market, with a focus on data analyst roles. This project was created to help me better understand the landscape of data-focused careers and uncover actionable insights for improving my skills. As a recent graduate with a deep interest in business and data analytics, I wanted to learn more about what the job market is looking for in data professionals—especially which skills are in demand and which ones pay the most.
+
+This project uses the same dataset provided in Luke Barousse’s Python Course, which includes thousands of job postings with detailed information on job titles, skills, salaries, and locations. I applied the Python skills learn throughout this course to explore the data and answer key questions about the skills, trends, and salaries tied to data roles. This helped me, an aspiring data analyst, gain a clearer understanding of the most valuable skills to develop and the potential career paths within the data analytics field.
+
+
+
+
+# The Questions
+
+Below are the questions I set out to answer through this analysis:
+
+1. What are the skills most in demand for the top 3 most popular data roles?
+
+2. How are in-demand skills trending for Data Analysts?
+
+3. How well do jobs and skills pay for Data Analysts?
+
+4. What are the optimal skills for data analysts to learn? (High Demand & High Paying)
+
+
+
+
+# The Tools Used
+
+To complete this project, I used a variety of tools and libraries that helped me organize, analyze, and visualize the data:
+
+To complete this project, I used a variety of tools and libraries that helped me organize, analyze, and visualize the data:
+
+* **Python:** The primary language I used to clean and analyze the dataset. It allowed me to work with the job market data and extract meaningful information. I also used the following Python libraries"
+    * **Pandas Library:**  Used for data manipulation and analysis.
+    * **Matplotlib Library:** Used for data visualization.
+    * **Seaborn Library:** Used for more advanced visualizations.
+
+* **Jupyter Notebooks:** Allowed me to combine code, output, and notes in a single place for easier storytelling.
+
+* **Visual Studio Code:** My preferred code editor for  executing the Python scripts I developed in the Jupyter Notebooks.
+
+* **Git & GitHub:** Used for version control and sharing my code.
+
+
+
+
+# The Data Preparation & Cleanup
+
+This section details how I prepared the job market data for analysis, ensuring it was clean and ready for exploration – a crucial step we learned in the course.
+
+## Importing & Cleaning the Data
+
+```python
+
+# Importing Libraries
+import ast
+import pandas as pd
+import seaborn as sns
+from datasets import load_dataset
+import matplotlib.pyplot as plt  
+
+# Loading Data
+dataset = load_dataset('lukebarousse/data_jobs')
+df = dataset['train'].to_pandas()
+
+# Data Cleanup
+df['job_posted_date'] = pd.to_datetime(df['job_posted_date'])
+df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.notna(x) else x)
+
+```
+
+## Filtering the Data Down to the U.S.
+
+```python
+# Filtering for the U.S.
+df_US = df[df['job_country'] == 'United States'].copy()
+
+
+# Filtering for the U.S. and Data Analyst roels
+df_DA_US = df[(df['job_title_short'] == 'Data Analyst') & (df['job_country'] == 'United States')].copy()
+
+```
+
+
+
 
 # The Analysis
 
@@ -259,3 +342,14 @@ plt.show()
 * **Potential with Analytical Tools:** Analytical tools (colored orange) Tableau and Power BI occupy a middle ground in terms of both demand (percentage of job postings) and salary, suggesting they are frequently used and offer a competitive average compensation. In contrast, while Excel exhibits the second-highest demand, indicating its widespread use across Data Analyst roles, it also presents one of the lower median salaries on the chart. This might imply that Excel proficiency is often an expected baseline skill for many data-related positions, contributing to its high demand, but specialized analytical tools like Tableau and Power BI are associated with roles requiring more in-depth analysis and thus command a higher pay.
 
 * **Specialization with Databases and Cloud Technology:** Oracle and SQL Server offered some of the highest salaries but exhibit the lowest demand in Data Analyst job postings. This may indicate that these skills are highly valued for specific, more specialized roles or within particular types of organizations, but they are not broadly required across the majority of Data Analyst positions. In contrast, focusing on programming skills and analytical tools, which together constitute a larger proportion of the high-demand and reasonably well-compensated skills, might represent a more broadly applicable and potentially more accessible path for many aspiring and current Data Analysts.
+
+
+
+
+# Ths Skills Learned & Knowledged Gained
+
+# The Insights
+
+# The Challenges Faced
+
+# The Conclusion
