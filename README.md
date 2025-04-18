@@ -42,6 +42,7 @@ plt.show()
 ### Visualization
 
 ![Visualization of Top Skills for Top 3 Data Roles](3_Project\Images\skill_demand_for_data_jobs.png)
+*This bar graph shows 
 
 
 ### Insights
@@ -59,6 +60,8 @@ plt.show()
 * **Data Engineer:** Demands skills in data manipulation (**SQL**), programming (**Python**), cloud technologies (**AWS**, **Azure**), and big data technologies (**Spark**). The focus seems to be on using data infrastructure and processing skills to build and maintain data pipelines.
 
 * **Data Scientist:** Seeks skills in programming (**Python**, **R**), data manipulation (**SQL**), and statistical analysis (**R**, **SAS**). Some skills in data visualization (**Tableau**) would also be notable. The focus seems to be on building predictive models and extracting complex insights.
+
+
 
 
 ## 2. How are in-demand skills trending for Data Analysts?
@@ -96,6 +99,7 @@ plt.show()
 
 ### Visualization
 ![Top Trending Skills for Data Analyst in the US](3_Project\Images\skills_trending_for_data_analyst.png)
+*This line graph shows the top trending skills for data analysts in the U.S. for 2023.
 
 ### Insights
 
@@ -107,9 +111,41 @@ plt.show()
 
 * **Power BI shows relatively stable but lower demand:** **Power BI** consistently had the lowest likelihood of being requested among the skills presented, with relatively minor fluctuations throughout the year. **Power BI** generally remains in the 20-25% range.
 
+
+
+
 ## 3. How well do jobs and skills pay for Data Analysts?
 
+### Salary Analysis
 
+Here is the link to my notebook to see a detailed breakdown of the steps taken: [.ipynb](3_Project\4_Salary_Analysis.ipynb)
+
+
+### Code
+
+```python
+
+sns.boxplot(data=df_US_top6, x='salary_year_avg', y='job_title_short', order=job_order)
+sns.set_theme(style='ticks')
+
+
+plt.title('Salary Distributions of Data Jobs in the US')
+plt.xlabel('Yearly Salary (USD)')
+plt.ylabel('')
+plt.xlim(0, 600000) 
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+
+```
+
+### Visualization
+![Salary Distributions of Data Jobs in the US](3_Project\Images\salary_analysis_for_data_roles.png)
+* This box plot shoes the salary distributions for the top 6 data roles.
+
+### Insights
+
+###
 
 Here is the link to my notebook to see a detailed breakdown of the steps taken: [.ipynb](3_Project\4_Salary_Analysis.ipynb)
 
@@ -126,7 +162,6 @@ Here is the link to my notebook to see a detailed breakdown of the steps taken: 
 ![]()
 
 ### Insights
-
 
 ## 4. What is the most optimal skill to learn for Data Analysts?
 
